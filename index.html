@@ -64,7 +64,7 @@ body {
 
 /* الحاوية */
 .container{
-  max-width:400px;
+  -width:400px;
   margin:30px auto;
   padding:15px;
 }
@@ -180,7 +180,7 @@ button:hover{
     <div class="title" id="title">
     <span class="note">Note:</span>
     Registration is open only to individuals registered with the Consulate General and holding a valid consular registration card.
-    <p>Maximum 1 guest per registration, subject to space availability.</p>
+    <p>imum 1 guest per registration, subject to space availability.</p>
     </div>
     <div id="status" class="status">Loading...</div>
     <form id="form">
@@ -211,8 +211,8 @@ firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
 
 // Limits
-const MAX_MAIN = 115;
-const MAX_TOTAL = 115;
+const MAX_MAIN = 20;
+const MAX_TOTAL = 20;
 
 let currentCount = 0;
 let isArabic = false;
