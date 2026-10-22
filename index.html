@@ -179,7 +179,8 @@ button:hover{
     <!--button class="lang" onclick="toggleLang()">🌐 عربي / English</button>-->
     <div class="title" id="title">
     <span class="note">Note:</span>
-    Maximum 1 guests per registration, subject to space availability.
+    Registration is open only to individuals registered with the Consulate General and holding a valid consular registration card.
+    <p>Maximum 1 guest per registration, subject to space availability.</p>
     </div>
     <div id="status" class="status">Loading...</div>
     <form id="form">
@@ -210,8 +211,8 @@ firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
 
 // Limits
-const MAX_MAIN = 50;
-const MAX_TOTAL = 50;
+const MAX_MAIN = 115;
+const MAX_TOTAL = 115;
 
 let currentCount = 0;
 let isArabic = false;
